@@ -1,3 +1,3 @@
-# connect-mysql-node
+# Description
 
-# how to connect to mysql database using node and express
+how to connect to mysql database using node and express
