@@ -6,9 +6,9 @@ const express = require('express');
 const mysql = require('mysql');
 
 var db = mysql.createConnection({
-  host: 'localhost',
-  user: 'foo',
-  password: 'bar',
+  host: 'company.cbmlwtaaldfn.us-east-2.rds.amazonaws.com',
+  user: 'opseek',
+  password: 'test1!',
   database: 'main_db'
 });
 
@@ -56,7 +56,7 @@ app.get('/getposts', (req, res) => {
     let query = db.query(sql, (err, results) => {
         if(err) throw err;
         console.log(results);
-        res.send('Posts fetched...');
+        res.send(results);
     });
 });
 
